@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <h1>Список</h1>
+{% for candidate in list %}
+    <div>
+        <p> <a href="{% url 'candidate_detail' pk=candidate.pk %}">{{ candidate.name }}</a></p>
+
+    </div>
+{% endfor %}
+</body>
+</html>
